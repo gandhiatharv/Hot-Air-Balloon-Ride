@@ -71,6 +71,7 @@ function writePosition(x, y){
 function readPosition(data){
   position = data.val();
   console.log(position.x);
+  console.log(position.y);
   balloon.x = position.x;
   balloon.y = position.y;
 }
