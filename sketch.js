@@ -30,8 +30,6 @@ balloonPosition.on("value", readPosition, showError);
 function draw() {
   background(bg);
 
-
-  balloon.visible = true; 
   if(position !==undefined){
 
   if(keyDown(LEFT_ARROW)){
@@ -45,12 +43,12 @@ function draw() {
   else if(keyDown(UP_ARROW)){
     writePosition(0, -10);
     balloon.addAnimation("hotAirBalloon",balloonImage2);
-  balloon.scale = balloon.scale - 0.01;
+  balloon.scale = balloon.scale - 0.005;
   }
   else if(keyDown(DOWN_ARROW)){
     writePosition(0, 10);
     balloon.addAnimation("hotAirBalloon",balloonImage2);
-  balloon.scale = balloon.scale + 0.01;
+  balloon.scale = balloon.scale + 0.005;
   }
   }
 
